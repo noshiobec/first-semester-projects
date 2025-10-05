@@ -23,8 +23,7 @@ def most_popular_product(orders):
     return {
         "product_id": most_popular_id,
         "product_name": PRODUCTS[most_popular_id]["name"],
-        "quantity": product_counts[most_popular_id],
-    }
+        "quantity": product_counts[most_popular_id], }
 
 def revenue_per_customer(orders, prods):
     revenue = {}
@@ -46,5 +45,4 @@ def build_report(orders, prods):
     return {
         "total_products_sold": total_products_sold(orders),
         "most_popular_product": most_popular_product(orders),
-        "revenue_per_customer": revenue_per_customer(orders, prods),
-    }
+        "revenue_per_customer": revenue_per_customer(orders, prods),}
