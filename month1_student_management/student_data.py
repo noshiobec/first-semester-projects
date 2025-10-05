@@ -32,8 +32,10 @@ def get_average_grade():
     if not students:
         print("No student grades available.")
         return
+        
     total = 0
     for student in students:
         total += student["grade"]
+        
     average = total / len(students)
-    print(f"Average grade: {average}")
+    print(f"Average grade: {average}: .2f")
