@@ -18,3 +18,8 @@ CREATE TABLE IF NOT EXISTS orders (
     product_id  INT NOT NULL REFERENCES products(product_id),
     quantity    INT NOT NULL CHECK (quantity > 0),
     order_date  DATE NOT NULL );
+
+ALTER TABLE products
+ADD COLUMN discount NUMERIC(5,2);
+
+
